@@ -1,63 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+
+
+
+<style>
+
+
+    body {
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    .navbar {
+        background-color: #333; overflow: hidden; position: fixed; top: 0; width: 100%;
+        z-index: 1000;
+    }
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+    .txtundernav {
+        padding: 20px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+    }
+
+    .menuundernav {
+        float: right;
+        display: block;
+        width: auto;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        background-color: #333;
+        margin-top: 5px;
+        margin-right: 6px;
+        color: white;
+        border: 1px solid white;
+    }
+</style>
+<style>
+    .box {
+
+        display: block;
+        width: 800px;
+        height: 100%;
+        margin: 50px auto;
+        background-color: grey;
+        text-align: center;
+        border-radius: 15px;
+
+    }
+</style>
+<style>
+    .hollowbox {
+        border: 5px solid white;
+        background-color: transparent;
+        width: auto;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 25px;
+    }
+</style>
+
+
 <head>
     <meta charset="UTF-8">
-    <title>Top Navigation Bar</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
+    <title>Secret games download</title>
+    <script>
+        function openFile(select) {
+            const file = select.value;
+            if ("help.html") {
+                window.location.href = file;
+            }
         }
+    </script>
+    <script>
+        function openFile(select) {
+            const file = select.value;
+            if (file) {
+                window.location.href = file;
+            }
+        }
+    </script>
 
-        /* Navigation bar container */
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-            position: fixed; /* Stays at the top */
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
 
-        /* Navigation links */
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        /* Hover effect */
-        .navbar a:hover {
-            background-color: #575757;
-        }
-
-        /* Page content spacing so it doesn't hide under navbar */
-        .content {
-            padding: 60px 20px;
-        }
-    </style>
 </head>
-<body>
+<header></header>
+<body style="background-color: lightgrey">
 
-<!-- Navigation Bar -->
 <div class="navbar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
+    <a href="">Password entry</a>
+    <select class="menuundernav" id="settings" name="settings_choice" onchange="openFile(this)">
+        <option value="">---- Select ----</option>
+        <option value="help.html">help</option>
+        <option value="goodbye.html">quit</option>
+    </select>
 </div>
 
-<!-- Page Content -->
-<div class="content">
-    <h1>Welcome!</h1>
-    <p>This is your page content. The navigation bar stays at the top.</p>
+<div class="hollowbox">
+    <h1>Hey</h1>
+    <p>Welcome to L/@m$ games.</p>
+    <h2>To access the games please read the description and instruction of this site.</h2>
 </div>
+
+<div class="box" >
+    <h1> <------ Information ------> </h1>
+    <p>Welcome to the unlocked HTML5/WEB encoded based games section. </p>
+    <p>To be able to access all FOLDERS you will need to have a password given to you. Maybe you will receive a file full of unknown characters.</p>
+    <p>To be able to obstain this password, you will need to contact this email.</p>
+
+</div>
+
+
+
+
+
+
+
 
 </body>
 </html>
-If you want, I can now merge this navbar with your earlier dropdown menu so you have both in one page — that way your site has a top nav and a functional dropdown in one go.
-Do you want me to combine them?
-
