@@ -1,48 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-
-<style>
-    body {
-        margin: 0;
-        font-family: sans-serif;
-    }
-
-    .navbar {
-        background-color: #333; overflow: hidden; position: fixed; top: 0; width: 100%;
-        z-index: 1000;
-    }
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-    }
-
-    .txtundernav {
-        padding: 20px 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 40px;
-    }
-
-    .menuundernav {
-        float: right;
-        display: block;
-        width: auto;
-        text-align: center;
-        padding: 10px;
-        text-decoration: none;
-        background-color: #333;
-        margin-top: 5px;
-        margin-right: 6px;
-        color: white;
-    }
-</style>
+<link rel="stylesheet" href="style.css">
 
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret games download</title>
     <script>
         function openFile(select) {
@@ -59,26 +22,72 @@
                 window.location.href = file;
             }
         }
+
     </script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            const agree = document.getElementById("agree");
+            const password = document.getElementById("password");
+
+            password.style.display = "none";
+
+            agree.addEventListener("change", function () {
+                if (agree.checked) {
+                    password.style.display = "inline-block";
+                } else {
+                    password.style.display = "none";
+                }
+            });
+        });
+
+    </script>
+
+
+
 
 
 </head>
 <header></header>
-<body>
+<body style="background-image: url('assets/image.jpg'); background-repeat: no-repeat; background-size: cover;">
+
 <div class="navbar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="">Password entry</a>
+    <a id="password" href="password.html">Password Entry</a>
     <select class="menuundernav" id="settings" name="settings_choice" onchange="openFile(this)">
         <option value="">---- Select ----</option>
-        <option value="help.html">help</option>
-        <option value="quit.html">quit</option>
+        <option value="help.html">Help</option>
+        <option value="goodbye.html">Quit</option>
     </select>
 </div>
 
-<div class="txtundernav">
-    <h1>Hey</h1>
-    <p>Enter password to get the files.</p>
+<div class="hollowbox">
+    <h1 class="neontext">Hey</h1>
+    <h2>To access the games please read the description and instruction of this site.</h2>
+
+</div>
+
+<div class="container">
+    <div class="box">
+        <h1> <------ Information ------> </h1>
+        <h1>Welcome to the unlocked HTML5/WEB encoded based games section. </h1>
+        <h1>To be able to access all FOLDERS you will need to have a password given to you. Maybe you will receive a file full of unknown characters.</h1>
+        <h1>To be able to obtain this password, you will need to contact <a href="mailto:liam.gderatamian@ecolesourphagop.com">this</a> email.</h1>
+    </div>
+    <div class="boxred">
+        <h1> <------ Warning ------> </h1>
+        <h1>PLEASE ACKNOWLEDGE THAT IF YOU GET INTO ANY TROUBLE WE ARE NOT RESPONSIBLE. BY READING THIS AND CONTINUING YOU SHOULD ALSO NOTE THAT IF ANY METHODS ARE LEAKED BY ONE OR ANOTHER, ALL PERMISSIONS WILL BE SET TO FALSE AND WILL GET THIS SITE SHUTDOWN.</h1>
+        <h1> <------ AGREEMENT ------> </h1>
+        <h1>BEFORE CONTINUING, YOU ALSO AGREE TO THE RULES AND TERMS OF USE. BY AGREEING, YOUR IP WILL BE REGISTERED AND WILL TAG IT WITH YOUR GOOGLE NAME. IN CASE YOU DECIDE TO <a href="https://en.wiktionary.org/wiki/snitch">snitch</a>. </h1>
+        <h1> <------ CONSEQUENCE ------> </h1>
+        <h1>NO MORE ACCESS TO FUTURE UPDATES AND NO MORE PERMISSION FOR FUTURE PROJECTS</h1>
+        <div>
+            <label>
+            <input type="checkbox" name="agree" id="agree">
+                Do you agree to the terms of use?
+            </label>>
+        </div>
+    </div>
 </div>
 
 
