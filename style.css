@@ -1,0 +1,187 @@
+
+input {
+    font-size: large;
+}
+
+.chkbox {
+    position: relative;
+    overflow: hidden;
+    font-size: 10px;
+
+
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-image: url("assets/image.jpg"); overflow: hidden; position: fixed; margin-top: -72px; width: 100%; right: -1px;
+    z-index: 1000;
+    border: 1px white solid;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.txtundernav {
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+}
+
+.menuundernav {
+    float: right;
+    display: block;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #3b3b3b;
+    margin-top: 5px;
+    margin-right: 6px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+.neontext {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.box {
+    flex: 1 1 300px;
+    border: 5px solid white;
+    background-color: transparent;
+    width: 900px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    overflow: hidden;
+
+
+    h1 {
+        margin-top: 60px;
+    }
+}
+.boxred {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid white;
+    background-color: transparent;
+    width: 900px;
+    text-align: center;
+    float: right;
+    color: red;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-shadow:
+            0 0 5px indianred,
+            0 0 10px indianred,
+            0 0 20px indianred,
+            0 0 40px indianred,
+            0 0 80px indianred;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    overflow: hidden;
+    h1 {
+        margin-top: 50px;
+    }
+
+}
+
+
+.hollowbox {
+    border: 5px solid white;
+    background-color: transparent;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+
+}
+.hollowbox2 {
+    border: 5px solid white;
+    background-color: transparent;
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    overflow: hidden;
+
+
+    h1 {
+        margin-top: 60px;
+    }
+}
+.fancyfont {
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        font-size: 1em;
+        padding: 15px;
+    }
+}
